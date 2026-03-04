@@ -1,30 +1,34 @@
 #""
 
-produto1 = {
-    "nome": input("digite o produto: "),
-    "preco": input("qual o preço: "),
-    "estoque": input("digite o estoque do produto: "),
-    "categoria": input("digite a categoria: ")
-}
+produtos = []
 
-print(produto1)
+while True:
 
-print(f"produto ofertado {produto1["nome"]} ")
-print(f"preço do produto{produto1["preco"]} ")
-print()
+    produto = {
+        "nome": input("digite o produto: "),
+        "preco": input("qual o preço: "),
+        "estoque": input("digite o estoque do produto: "),
+        "categoria": input("digite a categoria: ")
+    }
 
-produtos = [
-    {"nome": "Pc", "preço": 1599},
-    {"nome": "Mouse Gamer", "preço": 200},
-    {"nome": "Teclado Gamer", "preço": 450}, 
-    {"nome": "Monitor Full HD", "preço": 550}
-]
+    print(produtos)
+    print()
 
-print(produtos)
-print()
+    for produto in produtos:
+        print(f"o produto é {produto["nome"]}, e o preço é {produto["preço"]}")
 
-for produto in produtos:
-    print(f"o produto é {produto["nome"]}, e o preço é {produto["preço"]}")
+        produtos.append(produto)
 
+    print(produto)
 
+    print(f"produto ofertado {produto["nome"]} ")
+    print(f"preço do produto {produto["preco"]} ")
+    print()
 
+    pergunta = input("deseja digitar mais um produto: ")
+
+    if pergunta != "S":
+        print("Ok")
+    else:
+        print("Bye")
+        break
