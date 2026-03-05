@@ -1,4 +1,4 @@
-# "Bibi, Bye Bye..."
+# "Bibi, Bye Bye..." -Bibi (Brawl Stars)
 
 o_coiso_la = {
     "Objeto": "aquele_lá",
