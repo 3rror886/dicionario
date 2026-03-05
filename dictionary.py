@@ -1,4 +1,4 @@
-# ""
+# "Bibi, Bye Bye..."
 
 o_coiso_la = {
     "Objeto": "aquele_lá",
